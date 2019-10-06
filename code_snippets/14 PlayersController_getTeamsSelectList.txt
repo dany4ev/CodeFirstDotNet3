@@ -1,0 +1,14 @@
+private List<SelectListItem> getTeamsSelectList() {
+  List<Team> teamsList = _context.Teams.ToList();
+
+  List<SelectListItem> list = teamsList.ConvertAll(a =>
+    {
+      return new SelectListItem() {
+        Text = a.TeamName,
+        Value = a.TeamName,
+        Selected = false
+      };
+  });
+  return list;
+
+}

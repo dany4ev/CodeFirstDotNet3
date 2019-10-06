@@ -1,0 +1,4 @@
+Edit GET
+========
+ViewBag.ListOfTeams = getTeamsSelectList();
+

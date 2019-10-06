@@ -1,0 +1,4 @@
+dotnet aspnet-codegenerator controller -name TeamsController -m Team -dc HockeyContext --relativeFolderPath Controllers -udl
+
+dotnet aspnet-codegenerator controller -name PlayersController -m Player -dc HockeyContext --relativeFolderPath Controllers -udl
+

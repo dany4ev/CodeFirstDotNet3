@@ -1,0 +1,9 @@
+// for SqlServer running on Win 10 listening on standard port 1433
+"ConnectionStrings": {
+  "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=Hockey;Trusted_Connection=True;MultipleActiveResultSets=true"
+},
+
+// for SqlServer running in a container listening on non-standard port 1444
+"ConnectionStrings": {
+    "DefaultConnection": "Server=tcp:127.0.0.1,1444;Database=Hockey;UID=sa;PWD=SqlExpress!;"
+},

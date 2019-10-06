@@ -1,0 +1,11 @@
+docker pull mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=SqlExpress!" -e "MSSQL_PID=Express" -p 1444:1433 -d mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+
+IMPORTANT NOTE:
+===============
+On Mac, replace " with ' in previous "docker run ..." command.
+
+
+
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=SqlExpress!' -e 'MSSQL_PID=Express' -p 1444:1433 -d mcr.microsoft.com/mssql/server:2017-latest-ubuntu

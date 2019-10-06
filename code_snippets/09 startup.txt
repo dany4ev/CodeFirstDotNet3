@@ -1,0 +1,2 @@
+services.AddDbContext<HockeyContext>(options =>
+  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
